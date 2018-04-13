@@ -1,0 +1,186 @@
+/*
+ Theme Name:   Sydney Child
+ Theme URI:    http://example.com/sydney/
+ Description:  Sydney Child Theme
+ Author:       Kai
+ Author URI:   http://example.com
+ Template:     sydney
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  sydney-child
+*/
+
+.site-description{
+	margin: 5px 0 0;
+}
+
+/*.page-template-page_front-page .page-wrap{
+	position: relative;
+	background: url(images/bg-section-difference-repeater.jpg) top left;
+}
+
+	.page-template-page_front-page .page-wrap::before{
+		content: '';
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 50%;
+	    background: url(images/bg-section-difference-final.jpg) no-repeat;
+	    min-height: 560px;
+	    background-position: top right;
+	    -webkit-background-size: cover;
+	    background-size: cover;
+	    display: block;
+	    opacity: .95;
+	}*/
+
+	.home.page .page-wrap .content-wrapper{
+		padding: 0px;
+		width: 100%;
+	}
+		.home.page .page-wrap .content-wrapper .row{
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+	#difference_about{
+		position: relative;
+		background: url(images/bg-section-difference-repeater.jpg) top left;
+	}
+
+	#difference_about::before{
+		content: '';
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 50%;
+	    background: url(images/bg-section-difference-final.jpg) no-repeat;
+	    min-height: 560px;
+	    background-position: top right;
+	    -webkit-background-size: cover;
+	    background-size: cover;
+	    display: block;
+	    opacity: .95;
+	}
+		#difference_about .row{
+			margin: 0;
+			padding: 0;			
+		}
+		#difference_about .intro-left,
+		#difference_about .intro-right{
+			padding: 0 5% 0 5%;
+		}
+/*	.page-template-page_front-page .page-wrap::after{
+		content: '';
+		position: absolute;
+	    width: 50%;
+	    height: 100%;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 50%;
+	    background: #000;
+	    opacity: 0.4;
+	}*/
+
+	#make-difference h6, #make-difference p, 
+	.make-difference h3, .make-difference p{
+		color: white;
+	}
+
+	.make-difference h3,
+	.about-us h3{
+		margin-top: 2em;
+	}
+
+	#make-difference h6{
+		margin-bottom: .5em;
+	}
+
+	.make-difference p{
+		margin-bottom: 2em;
+	}
+
+	#make-difference li img{
+		display: inline-block;
+		width: 14%;
+		/*vertical-align: middle;*/
+	}
+
+	#make-difference li div{
+		display: inline-block;
+		padding-left: 4%;
+		width: 80%;
+		vertical-align: top;
+	}
+
+	.intro-right{
+
+	}
+		.intro-right .about-us{
+			padding: 0 0% 2em;
+		}
+
+		.intro-right .about-us p{
+			text-align: justify;
+			font-size: .9;
+		}
+
+	#product-section{
+		background: #1e73be;
+		padding-bottom: 2em;
+	}
+		#product-section h3{
+			padding-top: 1em;
+			color: white;
+			margin-top: 0px;
+		}
+
+		#product-section .row div{
+			background: white;
+		}
+
+
+	#blog-section{
+		padding: 1em auto;
+	}
+		#blog-section .intro-left,
+		#blog-section .intro-right{
+			padding: 1em 5%;
+		}
+
+
+
+
+
+
+
+
+/*
+responsiveness
+*/
+@media (max-width: 768px) {
+	#difference_about::before{
+		content: '';
+	    position: absolute;
+	    top: 0;
+	    bottom: 60%;
+	    left: 0;
+	    right: 0%;
+	    background: url(images/bg-section-difference-final.jpg) no-repeat;
+	    min-height: 680px;
+	    background-position: top right;
+	    -webkit-background-size: cover;
+	    background-size: cover;
+	    display: block;
+	    opacity: .95;
+	}
+}
+
+@media (min-width: 576px) {
+
+}
