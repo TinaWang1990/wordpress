@@ -153,9 +153,72 @@
 			padding: 1em 5%;
 		}
 
+/*
+	.container input{
+		margin: 5px;
+		border: none;
+		border-bottom: 1px solid #aaaaaa;
+		width: 70vw;
+		background: none;
 
+	}*/
 
+	.container button{
+		background-color: blue;
+		border: blue;
 
+	}
+
+#wpcf7-f37-p38-o1 form p label span{
+	color:red;
+}
+#wpcf7-f37-p38-o1 form p input[type="text"],
+#wpcf7-f37-p38-o1 form p input[type="email"],
+#wpcf7-f37-p38-o1 form p textarea{
+	padding:0.1em 0em;
+	border:none;
+	border-radius: 0px;
+	border-bottom: 1px solid #aaaaaa;
+	outline: none;
+	margin: 0px;
+	background: none;
+	font-size: 1.5em;
+}
+#wpcf7-f37-p38-o1 form p input[type="text"]:focus,
+#wpcf7-f37-p38-o1 form p input[type="email"]:focus{
+	border-bottom: 2px solid #337ab7;
+	animation: btn-darker 300ms none ease-out;
+	-webkit-animation:btn-darker 300ms none ease-out;
+}
+#wpcf7-f37-p38-o1 form p {
+	position: relative;
+}
+
+#wpcf7-f37-p38-o1 form p:not(.empty) label{
+	color: #0099ff;
+}
+#wpcf7-f37-p38-o1 form p.empty label {
+	top: 40px;
+	font-size: 1em;
+	color: grey;
+	animation: none;
+	-webkit-animation: none;
+}
+@keyframes float-labels {
+	0% {opacity: 1; color: #aaa; top:40px; font-size: 1em;}
+	20% {font-size: 1em; opacity: 0;}
+	30% {top: 30px;}
+	50% {opacity: 0; font-size: 0.7em;}
+	100% {top: 20px; opacity: 1;}
+}
+
+#wpcf7-f37-p38-o1 form p label {
+	position: absolute;
+	top:20px;
+	font-size: .7em;
+	animation: float-labels 300ms none ease-out;
+	-webkit-animation: float-labels 300ms none ease-out;
+}
 
 
 
